@@ -304,7 +304,7 @@ footer{background:#0A0A0A;color:#FAFAF8;margin-top:0}
 @keyframes fadeInUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
 .modal-title{font-size:clamp(1.4rem,2.6vw,2.2rem);font-weight:800;color:var(--ink);line-height:1.25;margin-bottom:48px;letter-spacing:-0.02em}
 
-/* ==================== MODAL SHOTS (8 IMAGES GRID) ==================== */
+/* ==================== MODAL SHOTS ==================== */
 .modal-shots{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -685,15 +685,15 @@ const projects = [
     github:null, live:'https://antonyjenish-r.github.io/BUS-BOOKING-WEBSITE/'
   },
   {
-    id:'aegis', title:'AEGIS — AI-Powered Personal Safety & Emergency Response',
-    status:'Hackathon Project', portrait:true,
-    short:'Multi-modal emergency response system combining SOS, voice, motion, and AI-based signal fusion.',
-    description:'AEGIS is an AI-powered personal safety and emergency response system designed to help users trigger emergency alerts when they may be unable to operate their phone normally. The system combines manual SOS, voice, motion, location, and audio signals to detect potential emergencies and notify trusted contacts and emergency responders.',
-    problem:'During situations such as harassment, assault, or kidnapping, a victim may not be able to unlock their phone or manually call for help. Traditional safety apps depend on manual activation, internet connectivity, or a single trigger mechanism.',
-    contribution:'Designed and developed the Android application, integrated multi-modal SOS triggers, and built the AI signal-fusion flow and dispatcher notification pipeline.',
-    tech:['Android','Jetpack Compose','TensorFlow Lite','MediaPipe','Audio DSP','Node.js / FastAPI','PostgreSQL','Firebase','Docker'],
+    id:'aegis', title:'AEGIS — Intelligent Women Safety App (Hackathon Winner 🏆)',
+    status:'Hackathon Winner (2 Prizes)', portrait:true,
+    short:'Privacy-first, AI-powered women\'s safety app built with Flutter & Supabase. Won 2 Prizes for innovation and social impact.',
+    description:'AEGIS is a privacy-first, AI-powered women\'s safety application built with Flutter and Supabase. Originally integrated with Supabase for authentication and database management. The app successfully sent real-time SMS alerts with live Google Maps location to emergency contacts during the hackathon. For security and evidence-safety reasons, the live public demo currently runs on Mock APIs (offline local storage).',
+    problem:'During emergencies, victims often cannot operate their phones normally. AEGIS solves this by providing multi-modal triggers (SOS, voice, motion) and real-time alerts with location sharing to trusted contacts.',
+    contribution:'Full app development using Flutter, native Kotlin integration for AI audio detection, and Supabase backend integration for real-time SMS and location sharing.',
+    tech:['Flutter', 'Supabase', 'Native Kotlin', 'Google Maps API', 'Mock APIs (Demo)', 'Dart'],
     shots:['aegis-1.png','aegis-2.png','aegis-3.png','aegis-4.png'],
-    github:'https://github.com/AntonyJenish-r/aegis-app', live:null
+    github:'https://github.com/AntonyJenish-r/aegis-app', live:'https://stunning-kelpie-0e6a06.netlify.app'
   },
   {
     id:'restaurant', title:'AS Restaurant Website', status:null, portrait:false,
@@ -873,13 +873,11 @@ function openLightbox(src){
 function closeLightbox(){
   lightbox.classList.remove('open');
   lightboxImg.src = '';
-  // Restore modal scroll if modal is still open
   if (!modal.classList.contains('open')) {
     document.body.classList.remove('no-scroll');
   }
 }
 
-// Click on any image inside modal-shots opens lightbox
 document.addEventListener('click', e => {
   if (e.target.matches('.modal-shots img')) {
     e.stopPropagation();
@@ -887,7 +885,6 @@ document.addEventListener('click', e => {
   }
 });
 
-// Close lightbox on click outside or close button
 lightbox.addEventListener('click', e => {
   if (e.target === lightbox) closeLightbox();
 });
@@ -896,10 +893,8 @@ document.getElementById('lightboxClose').addEventListener('click', e => {
   closeLightbox();
 });
 
-// Prevent click inside lightbox image from closing
 lightboxImg.addEventListener('click', e => e.stopPropagation());
 
-// Escape key: close lightbox first, then modal
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     if (lightbox.classList.contains('open')) {
