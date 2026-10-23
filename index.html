@@ -7,7 +7,7 @@
 <meta name="description" content="Antony Jenish — AI & Data Science Developer." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <style>
 /* ==================== RESET ==================== */
@@ -102,7 +102,7 @@ section{position:relative;padding:120px 0}
 @media(min-width:1024px){section{padding:180px 0}}
 .section-head{margin-bottom:80px;max-width:900px}
 @media(min-width:1024px){.section-head{margin-bottom:120px}}
-.section-eyebrow{display:flex;align-items:center;gap:16px;margin-bottom:32px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gray);font-weight:500}
+.section-eyebrow{display:flex;align-items:center;gap:16px;margin-bottom:32px;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gray);font-weight:600}
 .section-eyebrow .line{height:1px;width:60px;background:var(--line-strong)}
 .section-title{font-size:clamp(2.4rem,6vw,5rem);font-weight:800;letter-spacing:-0.03em;line-height:1.02;color:var(--ink)}
 .section-sub{margin-top:32px;font-size:1.15rem;color:var(--gray);max-width:640px;line-height:1.7}
@@ -112,7 +112,7 @@ section{position:relative;padding:120px 0}
 @media(min-width:1024px){#hero{padding-top:240px;padding-bottom:160px}}
 .hero-grid{display:grid;grid-template-columns:1fr;gap:64px;align-items:center}
 @media(min-width:1024px){.hero-grid{grid-template-columns:6fr 6fr;gap:80px}.hero-text{order:1}.hero-img{order:2;display:flex;justify-content:flex-end}}
-.hero-monogram{font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:0.4em;color:var(--ink);font-weight:700;margin-bottom:20px;padding-left:2px;position:relative;display:inline-block}
+.hero-monogram{font-family:'Inter',sans-serif;font-size:14px;letter-spacing:0.4em;color:var(--ink);font-weight:700;margin-bottom:20px;padding-left:2px;position:relative;display:inline-block}
 .hero-monogram::after{content:'';display:block;width:32px;height:2px;background:var(--ink);margin-top:10px}
 .hero-role{font-size:13px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gray);margin-bottom:32px;font-weight:600}
 .hero-name{font-size:clamp(3.2rem,8vw,7rem);font-weight:800;letter-spacing:-0.04em;line-height:0.98;color:var(--ink);margin-bottom:40px}
@@ -120,7 +120,8 @@ section{position:relative;padding:120px 0}
 .hero-intro{max-width:620px;color:var(--gray);font-size:1.2rem;line-height:1.75;margin-bottom:56px}
 .hero-buttons{display:flex;flex-wrap:wrap;gap:20px}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:20px 40px;font-size:13px;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;border:2px solid transparent;transition:all .35s ease}
+/* ==================== BUTTONS (OVAL RADIUS) ==================== */
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:20px 40px;font-size:13px;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;border:2px solid transparent;transition:all .35s ease;border-radius:999px}
 .btn-primary{background:var(--ink);color:#FAFAF8;border-color:var(--ink)}
 .btn-primary:hover{background:transparent;color:var(--ink)}
 .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-strong)}
@@ -156,7 +157,7 @@ section{position:relative;padding:120px 0}
 @media(min-width:640px){.skills-grid{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1024px){.skills-grid{grid-template-columns:repeat(3,1fr);gap:72px 64px}}
 .skill-cat{padding-top:24px;border-top:1px solid var(--line-strong)}
-.skill-cat h3{font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:var(--gray);font-weight:700;margin-bottom:24px;font-family:'JetBrains Mono',monospace}
+.skill-cat h3{font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:var(--gray);font-weight:700;margin-bottom:24px;font-family:'Inter',sans-serif}
 .skill-list{list-style:none;display:flex;flex-direction:column;gap:14px}
 .skill-list li{font-size:1.05rem;color:var(--ink);font-weight:500;display:flex;align-items:center;gap:14px;transition:transform .3s ease}
 .skill-list li::before{content:'';width:18px;height:1px;background:var(--gray);flex-shrink:0;transition:width .3s ease,background .3s ease}
@@ -164,14 +165,14 @@ section{position:relative;padding:120px 0}
 .skill-list li:hover::before{width:32px;background:var(--ink)}
 
 .soft-wrap{margin-top:120px}
-.soft-title{font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gray);font-weight:600;margin-bottom:32px;font-family:'JetBrains Mono',monospace}
+.soft-title{font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gray);font-weight:600;margin-bottom:32px;font-family:'Inter',sans-serif}
 .soft-list{display:flex;flex-wrap:wrap;gap:12px 40px;list-style:none}
 .soft-list li{font-size:1.05rem;color:var(--ink);font-weight:500;padding-bottom:4px;border-bottom:1px solid var(--line)}
 
 /* ==================== PROJECTS ==================== */
 .projects-grid{display:grid;grid-template-columns:1fr;gap:40px}
 @media(min-width:768px){.projects-grid{grid-template-columns:repeat(2,1fr);gap:48px}}
-.project-card{background:#FFFFFF;border:1px solid var(--line);overflow:hidden;cursor:pointer;transition:transform .5s ease,box-shadow .5s ease,border-color .5s ease}
+.project-card{background:#FFFFFF;border:1px solid var(--line);overflow:hidden;cursor:pointer;transition:transform .5s ease,box-shadow .5s ease,border-color .5s ease;border-radius:16px}
 .project-card:hover{transform:translateY(-8px);box-shadow:0 24px 60px -20px rgba(0,0,0,0.15);border-color:var(--line-strong)}
 
 .project-thumb{position:relative;aspect-ratio:16/10;background:var(--bg-soft);overflow:hidden}
@@ -194,8 +195,8 @@ section{position:relative;padding:120px 0}
 .project-thumb.portrait img:nth-child(3){transform:rotate(4deg) translateY(6px)}
 .project-card:hover .project-thumb.portrait img{filter:drop-shadow(0 16px 40px rgba(0,0,0,0.6))}
 
-.project-thumb .num{position:absolute;top:24px;left:24px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.2em;color:var(--ink);font-weight:600;background:rgba(250,250,248,0.95);padding:6px 12px;z-index:2}
-.project-thumb .badge{position:absolute;top:24px;right:24px;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#FAFAF8;background:var(--ink);font-weight:700;padding:8px 14px;z-index:2}
+.project-thumb .num{position:absolute;top:24px;left:24px;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:0.1em;color:var(--ink);font-weight:700;background:rgba(250,250,248,0.95);padding:6px 12px;z-index:2;border-radius:999px}
+.project-thumb .badge{position:absolute;top:24px;right:24px;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#FAFAF8;background:var(--ink);font-weight:700;padding:8px 14px;z-index:2;border-radius:999px}
 
 .project-body{padding:40px}
 @media(min-width:1024px){.project-body{padding:48px}}
@@ -208,7 +209,7 @@ section{position:relative;padding:120px 0}
 /* ==================== EXPERIENCE ==================== */
 .exp-item{display:grid;grid-template-columns:1fr;gap:32px;border-top:1px solid var(--line-strong);padding:56px 0}
 @media(min-width:768px){.exp-item{grid-template-columns:4fr 8fr;gap:80px;padding:72px 0}}
-.exp-num{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.2em;color:var(--gray);font-weight:600}
+.exp-num{font-family:'Inter',sans-serif;font-size:13px;letter-spacing:0.2em;color:var(--gray);font-weight:700}
 .exp-duration{margin-top:16px;font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gray);font-weight:600}
 .exp-body h3{font-size:clamp(1.5rem,3vw,2.4rem);font-weight:700;color:var(--ink);margin-bottom:12px;line-height:1.15;letter-spacing:-0.02em}
 .exp-body .company{font-size:1.05rem;color:var(--gray);margin-bottom:32px;font-weight:500}
@@ -234,7 +235,7 @@ section{position:relative;padding:120px 0}
 .cert-row{display:grid;grid-template-columns:60px 1fr;gap:32px;padding:32px 0;border-bottom:1px solid var(--line);transition:padding-left .4s ease;align-items:baseline}
 .cert-row:hover{padding-left:16px}
 @media(min-width:768px){.cert-row{grid-template-columns:80px 2fr 1.2fr 1fr;gap:48px;padding:36px 0}}
-.cert-num{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.2em;color:var(--gray);font-weight:600}
+.cert-num{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:0.1em;color:var(--gray);font-weight:700}
 .cert-name{font-size:1.15rem;font-weight:700;color:var(--ink);line-height:1.35;letter-spacing:-0.005em}
 .cert-issuer{font-size:14px;color:var(--gray);font-weight:500}
 .cert-date{font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gray-light);font-weight:600}
@@ -277,6 +278,7 @@ footer{background:#0A0A0A;color:#FAFAF8;margin-top:0}
   position:relative;width:100%;max-width:1100px;
   margin:0 auto;background:#FAFAF8;
   animation:modalIn .5s cubic-bezier(.19,1,.22,1) both;
+  border-radius:16px;overflow:hidden;
 }
 @keyframes modalIn{from{opacity:0;transform:translateY(40px) scale(.98)}to{opacity:1;transform:none}}
 .modal-header{
@@ -285,11 +287,13 @@ footer{background:#0A0A0A;color:#FAFAF8;margin-top:0}
   gap:20px;padding:20px 32px;background:#FAFAF8;
   border-bottom:1px solid var(--line);
 }
+/* ==================== CLOSE BUTTON (OVAL) ==================== */
 .modal-close{
   font-size:11px;letter-spacing:0.22em;text-transform:uppercase;
   color:var(--ink);padding:10px 18px;background:transparent;
   font-weight:700;border:1px solid var(--line);
   transition:background .3s,color .3s;flex-shrink:0;
+  border-radius:999px;
 }
 .modal-close:hover{background:var(--ink);color:#FAFAF8}
 .modal-body{padding:48px 32px}
@@ -300,9 +304,10 @@ footer{background:#0A0A0A;color:#FAFAF8;margin-top:0}
 @keyframes fadeInUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
 .modal-title{font-size:clamp(1.4rem,2.6vw,2.2rem);font-weight:800;color:var(--ink);line-height:1.25;margin-bottom:48px;letter-spacing:-0.02em}
 
+/* ==================== MODAL SHOTS (8 IMAGES GRID) ==================== */
 .modal-shots{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:16px;margin-bottom:64px;align-items:start;
 }
 .modal-shots img{
@@ -314,6 +319,7 @@ footer{background:#0A0A0A;color:#FAFAF8;margin-top:0}
   transform:translateX(var(--from-x,0)) scale(.96);
   animation:shotIn .8s cubic-bezier(.19,1,.22,1) forwards;
   transition:transform .3s ease,box-shadow .3s ease;
+  border-radius:8px;
 }
 .modal-shots img:hover{transform:scale(1.02);box-shadow:0 12px 30px rgba(0,0,0,0.15)}
 .modal-shots img:nth-child(odd){--from-x:-60px}
@@ -322,7 +328,10 @@ footer{background:#0A0A0A;color:#FAFAF8;margin-top:0}
 .modal-shots img:nth-child(2){animation-delay:.45s}
 .modal-shots img:nth-child(3){animation-delay:.55s}
 .modal-shots img:nth-child(4){animation-delay:.65s}
-.modal-shots img:nth-child(n+5){animation-delay:.75s}
+.modal-shots img:nth-child(5){animation-delay:.75s}
+.modal-shots img:nth-child(6){animation-delay:.85s}
+.modal-shots img:nth-child(7){animation-delay:.95s}
+.modal-shots img:nth-child(8){animation-delay:1.05s}
 @keyframes shotIn{to{opacity:1;transform:translateX(0) scale(1)}}
 
 .modal-content-grid{display:grid;grid-template-columns:1fr;gap:64px}
@@ -335,8 +344,9 @@ footer{background:#0A0A0A;color:#FAFAF8;margin-top:0}
 .modal-block h4{font-size:12px;letter-spacing:0.28em;text-transform:uppercase;color:var(--gray);font-weight:600;margin-bottom:16px}
 .modal-block p{color:var(--gray);font-size:1.05rem;line-height:1.75}
 .modal-side{display:flex;flex-direction:column;gap:48px}
+/* ==================== TAGS (OVAL) ==================== */
 .modal-tags{display:flex;flex-wrap:wrap;gap:10px;list-style:none}
-.modal-tags li{font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink);border:1px solid var(--line-strong);padding:10px 14px;font-weight:600;opacity:0;animation:fadeInUp .5s cubic-bezier(.19,1,.22,1) forwards}
+.modal-tags li{font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink);border:1px solid var(--line-strong);padding:10px 14px;font-weight:600;opacity:0;animation:fadeInUp .5s cubic-bezier(.19,1,.22,1) forwards;border-radius:999px}
 .modal-tags li:nth-child(1){animation-delay:.9s}
 .modal-tags li:nth-child(2){animation-delay:.95s}
 .modal-tags li:nth-child(3){animation-delay:1s}
@@ -346,6 +356,10 @@ footer{background:#0A0A0A;color:#FAFAF8;margin-top:0}
 .modal-tags li:nth-child(7){animation-delay:1.2s}
 .modal-tags li:nth-child(8){animation-delay:1.25s}
 .modal-tags li:nth-child(9){animation-delay:1.3s}
+.modal-tags li:nth-child(10){animation-delay:1.35s}
+.modal-tags li:nth-child(11){animation-delay:1.4s}
+.modal-tags li:nth-child(12){animation-delay:1.45s}
+.modal-tags li:nth-child(13){animation-delay:1.5s}
 .modal-links{display:flex;flex-direction:column;gap:16px}
 .modal-links a{font-size:15px;color:var(--ink);font-weight:600;padding-bottom:16px;border-bottom:1px solid var(--line);transition:opacity .3s,transform .3s}
 .modal-links a:hover{opacity:0.5;transform:translateX(6px)}
@@ -367,6 +381,7 @@ footer{background:#0A0A0A;color:#FAFAF8;margin-top:0}
   box-shadow:0 20px 60px rgba(0,0,0,0.5);
   cursor:default;
 }
+/* ==================== LIGHTBOX CLOSE (OVAL) ==================== */
 .lightbox-close{
   position:absolute;top:24px;right:32px;
   color:#FAFAF8;font-size:12px;letter-spacing:0.25em;
@@ -375,6 +390,7 @@ footer{background:#0A0A0A;color:#FAFAF8;margin-top:0}
   background:rgba(0,0,0,0.4);
   transition:background .3s,border-color .3s;
   z-index:10;
+  border-radius:999px;
 }
 .lightbox-close:hover{background:#FAFAF8;color:#0A0A0A;border-color:#FAFAF8}
 
@@ -658,6 +674,17 @@ const skills = [
 
 const projects = [
   {
+    id:'santony-travels', title:'S Antony Travels - Premium Bus Booking',
+    status:'Live Project', portrait:false,
+    short:'A modern, fully responsive Bus Ticket Booking web application with simulated backend and real-world logic.',
+    description:'S Antony Travels is a modern, fully responsive Bus Ticket Booking web application designed to provide a seamless and secure travel booking experience. Built with a strong focus on UI/UX and real-world logic, this project demonstrates a complete frontend architecture with a simulated backend environment.',
+    problem:'The goal was to create a seamless booking experience for users while ensuring data integrity through real-time seat locking, preventing double bookings, and handling secure transactions with a mock gateway.',
+    contribution:'Full-stack development including React frontend, mock backend using LocalStorage, complex seat locking logic, female safety logic, and live GPS tracking simulation.',
+    tech:['React.js', 'TypeScript', 'Vite', 'Tailwind CSS', 'React Router', 'React Context', 'LocalStorage (Mock API)', 'Lucide React', 'React Hot Toast'],
+    shots:['client-1.png','client-2.png','client-3.png','client-4.png','client-5.png','client-6.png','client-7.png','client-8.png'],
+    github:null, live:'https://antonyjenish-r.github.io/BUS-BOOKING-WEBSITE/'
+  },
+  {
     id:'aegis', title:'AEGIS — AI-Powered Personal Safety & Emergency Response',
     status:'Hackathon Project', portrait:true,
     short:'Multi-modal emergency response system combining SOS, voice, motion, and AI-based signal fusion.',
@@ -667,17 +694,6 @@ const projects = [
     tech:['Android','Jetpack Compose','TensorFlow Lite','MediaPipe','Audio DSP','Node.js / FastAPI','PostgreSQL','Firebase','Docker'],
     shots:['aegis-1.png','aegis-2.png','aegis-3.png','aegis-4.png'],
     github:'https://github.com/AntonyJenish-r/aegis-app', live:null
-  },
-  {
-    id:'santony-travels', title:'SANTONY TRAVELS - Bus Ticket Booking',
-    status:'In Development', portrait:false,
-    short:'Modern, full-stack Bus Ticket Booking Web Application with real-time seat locking and secure payments.',
-    description:'Santony Travels is a modern, full-stack Bus Ticket Booking Web Application. It allows users to search for buses, select seats in real-time, and book tickets securely. The platform features a robust seat-locking mechanism to prevent double booking, a secure authentication system, a mock payment gateway integration, and a user dashboard to manage bookings and cancellations.',
-    problem:'The goal was to create a seamless booking experience for users while ensuring data integrity through real-time seat locking, preventing double bookings and handling secure transactions.',
-    contribution:'Full-stack development including React frontend, Node.js/Express backend, database schema design with Prisma, and payment gateway integration.',
-    tech:['React.js', 'TypeScript', 'Tailwind CSS', 'Vite', 'React Router', 'Node.js', 'Express.js', 'JWT', 'Bcrypt', 'PostgreSQL', 'Prisma', 'Razorpay', 'Axios'],
-    shots:['client-1.png','client-2.png','client-3.png','client-4.png'],
-    github:null, live:null
   },
   {
     id:'restaurant', title:'AS Restaurant Website', status:null, portrait:false,
@@ -941,7 +957,7 @@ document.getElementById('copyYear').textContent = `© ${new Date().getFullYear()
 /* ==================== INTRO ==================== */
 (function runIntro(){
   const intro = document.getElementById('intro');
-  const hasPlayed = (() => { try { return sessionStorage.getItem('aj_intro_v8') === '1'; } catch { return false; } })();
+  const hasPlayed = (() => { try { return sessionStorage.getItem('aj_intro_v9') === '1'; } catch { return false; } })();
 
   if (hasPlayed || prefersReduced) {
     intro.classList.add('hidden');
@@ -952,7 +968,7 @@ document.getElementById('copyYear').textContent = `© ${new Date().getFullYear()
 
   const tl = gsap.timeline({
     onComplete: () => {
-      try { sessionStorage.setItem('aj_intro_v8','1'); } catch {}
+      try { sessionStorage.setItem('aj_intro_v9','1'); } catch {}
       intro.classList.add('hidden');
       document.body.classList.remove('no-scroll');
     }
